@@ -10,7 +10,7 @@
 //- Updating the values of the URL/path variables below these lines by emulating the provided (original) examples.
 //- The original varocarbas.com code deals with .htaccess-modified URLs. The attached sample file contains the only RewriteRule which is required to execute this code.
 
-//For the time, I will not explain the algorithm or include descriptive comments.
+//For the time being, I will not explain the algorithm or include descriptive comments.
 
 set_time_limit(120); 
 
