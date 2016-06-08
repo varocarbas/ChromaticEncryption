@@ -2,7 +2,6 @@
 
 This code is very similar to the one of the original v.1.3 in varocarbas.com (http://varocarbas.com/tools/chromatic/1.3/). I have only 
 removed/adapted parts dealing with private or irrelevant information. The functionalities (encryption/decryption) are identical. 
-I (= varocarbas = Alvaro Carballo Garcia) am the sole author of each single bit of this code.
 
 This is a ready-to-use application which only needs the following basic modifications:
 - Updating the DB-connection information in the db.php file.
@@ -11,3 +10,15 @@ This is a ready-to-use application which only needs the following basic modifica
 - The original varocarbas.com code deals with .htaccess-modified URLs. The attached sample file contains the only RewriteRule which is required to execute this code.
 
 For the time being, I will not explain the algorithm or include descriptive comments.
+
+--- 
+
+#AUTHORSHIP & COPYRIGHT
+I, Alvaro Carballo Garcia (= varocarbas), am the sole author of each single bit of this code.
+
+Equivalently to what happens with all my other online contributions, this code can be considered public domain. For more information about my copyright/authorship attribution ideas, visit the corresponding pages of my sites:
+
+http://customsolvers.com/en/pages/company/legal/copyright/
+ES: http://customsolvers.com/es/paginas/empresa/legal/copyright/
+http://varocarbas.com/copyright/
+ES: http://varocarbas.com/copyright_es/
