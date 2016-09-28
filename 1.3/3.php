@@ -6,7 +6,7 @@ $count0 = 0;
 $start = microtime(true);
 for ($y = $xy_start->y; $y < $height; $y++)
 {
-    for ($x = $xy_start->x; $x < $width; $x++)
+	for ($x = $xy_start->x; $x < $width; $x++)
     {
 		if (array_search(new XY($x, $y), $used) != null) continue;
 		
@@ -30,7 +30,7 @@ for ($y = $xy_start->y; $y < $height; $y++)
 			}
 			
             $xy_orig = new XY($xy_new->x, $xy_new->y);
-			$color_orig = imagecolorat($cur_image, $xy_orig->x, $xy_orig->y);
+	   		$color_orig = imagecolorat($cur_image, $xy_orig->x, $xy_orig->y);
 			
 			$limit = limit_rgb($color_orig);
 			if($encrypting) $limit_ok = limit_rgb_enc($color_orig, $all_vars[$cur_var]);	
@@ -81,7 +81,7 @@ for ($y = $xy_start->y; $y < $height; $y++)
 
 				if(!$increased)
 				{
-				    $xy_new->x = $xy_new->x + 1;
+			    	$xy_new->x = $xy_new->x + 1;
 					$xy_new = get_next_xy($xy_new);	
 				}
             }
