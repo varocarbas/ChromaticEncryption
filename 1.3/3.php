@@ -115,7 +115,6 @@ else
 {
 	if ($count < $length) $is_wrong = true;
 }
-
 if($is_wrong) show_error("The input image isn't adequate for this encrypting methodology.");
 
 function limit_rgb($cur_color)
