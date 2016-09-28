@@ -191,27 +191,27 @@ function update_indices($first, $second, $db)
 function get_next_xy($cur_xy)
 {
 	global $width, $height;	
-    $new_xy = new XY($cur_xy->x, $cur_xy->y);
+	$new_xy = new XY($cur_xy->x, $cur_xy->y);
 
-    if ($new_xy->x > $width - 1)
-    {
-        $new_xy->x = $new_xy->x - $width;
-        $new_xy->y = $new_xy->y + 1;
-    }
-    else if ($new_xy->x < 0)
-    {
-        $new_xy->x = $width + $new_xy->x;
-        $new_xy->y = $new_xy->y - 1;
-    }
+	if ($new_xy->x > $width - 1)
+	{
+		$new_xy->x = $new_xy->x - $width;
+		$new_xy->y = $new_xy->y + 1;
+	}
+	else if ($new_xy->x < 0)
+	{
+		$new_xy->x = $width + $new_xy->x;
+		$new_xy->y = $new_xy->y - 1;
+	}
 
-    if ($new_xy->y > $height - 1)
-    {
-        $new_xy->x = 0;
-        $new_xy->y = 0;
-    }
-    else if ($new_xy->y < 0) $new_xy->y = $height - 1;
-
-    return $new_xy;
+	if ($new_xy->y > $height - 1)
+	{
+		$new_xy->x = 0;
+		$new_xy->y = 0;
+	}
+	else if ($new_xy->y < 0) $new_xy->y = $height - 1;
+	
+	return $new_xy;
 }
 
 function get_var($char)
@@ -285,19 +285,19 @@ class RGB
 	public function RGB($r, $g, $b)
 	{
 		$this->r = $r;
-        $this->g = $g;
-        $this->b = $b;
+		$this->g = $g;
+		$this->b = $b;
 	}
 }
 
 class XY
 {
 	public $x, $y;
-    public function XY($x, $y)
-    {
-        $this->x = $x;
+	public function XY($x, $y)
+	{
+		$this->x = $x;
 		$this->y = $y;
-    }
+	}
 }
 
 ?>
