@@ -81,7 +81,7 @@ for ($y = $xy_start->y; $y < $height; $y++)
 
 				if(!$increased)
 				{
-			    	$xy_new->x = $xy_new->x + 1;
+					$xy_new->x = $xy_new->x + 1;
 					$xy_new = get_next_xy($xy_new);	
 				}
 			}
