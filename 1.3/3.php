@@ -7,16 +7,16 @@ $start = microtime(true);
 for ($y = $xy_start->y; $y < $height; $y++)
 {
 	for ($x = $xy_start->x; $x < $width; $x++)
-    {
+	{
 		if (array_search(new XY($x, $y), $used) != null) continue;
 		
 		if($encrypting) $cur_var = $cur_var + 1;
 		else $cur_char = null;
 		
-        $xy_orig = new XY($x, $y);
+		$xy_orig = new XY($x, $y);
 		$xy_new = new XY($x, $y);
 
-        $color_orig = null;
+		$color_orig = null;
 		$color_new = null;
 		
 		$limit = 0;
@@ -29,15 +29,15 @@ for ($y = $xy_start->y; $y < $height; $y++)
 				show_error("The process has taken too long.<br/>Better try with a different picture.");
 			}
 			
-            $xy_orig = new XY($xy_new->x, $xy_new->y);
+			$xy_orig = new XY($xy_new->x, $xy_new->y);
 	   		$color_orig = imagecolorat($cur_image, $xy_orig->x, $xy_orig->y);
 			
 			$limit = limit_rgb($color_orig);
 			if($encrypting) $limit_ok = limit_rgb_enc($color_orig, $all_vars[$cur_var]);	
 			
 			$increased = false;
-            if (($encrypting && $limit_ok) || (!$encrypting && $limit > $limit0))
-            {
+			if (($encrypting && $limit_ok) || (!$encrypting && $limit > $limit0))
+			{
 				$increased = true;
 				$xy_new = get_next_xy(new XY($xy_orig->x + $next_pixel, $xy_orig->y));
 				if(array_search($xy_new, $used) == null)
@@ -49,7 +49,7 @@ for ($y = $xy_start->y; $y < $height; $y++)
 						if(limit_rgb($color_new) > $limit0) $cur_char = get_char_rgb($color_orig, $color_new);	
 					}
 				}
-            }
+			}
 
 			if($encrypting && $color_new != null) 
 			{
@@ -84,14 +84,14 @@ for ($y = $xy_start->y; $y < $height; $y++)
 			    	$xy_new->x = $xy_new->x + 1;
 					$xy_new = get_next_xy($xy_new);	
 				}
-            }
+			}
 		}
 		
 		$used[count($used)] = $xy_orig;
 		$used[count($used)] = $xy_new;
 
-        $x = $xy_new->x;
-        $y = $xy_new->y;
+		$x = $xy_new->x;
+		$y = $xy_new->y;
 	}
 	
 	$xy_start->x = 0;
