@@ -26,9 +26,9 @@ function get_all_vars($string)
 function get_new_color($cur_color, $cur_all_vars)
 {
 	$rgb = get_rgb($cur_color);
-    $rgb[0] = $rgb[0] + $cur_all_vars->r;
-    $rgb[1] = $rgb[1] + $cur_all_vars->g;
-    $rgb[2] = $rgb[2] + $cur_all_vars->b;
+	$rgb[0] = $rgb[0] + $cur_all_vars->r;
+	$rgb[1] = $rgb[1] + $cur_all_vars->g;
+	$rgb[2] = $rgb[2] + $cur_all_vars->b;
 
 	if (!rgb_ok($rgb[0], $rgb[1], $rgb[2])) return null;
 
