@@ -13,7 +13,7 @@ For the time being, I will not explain the algorithm or include descriptive comm
 
 --- 
 
-#AUTHORSHIP & COPYRIGHT
+# AUTHORSHIP & COPYRIGHT
 I, Alvaro Carballo Garcia (= varocarbas), am the sole author of each single bit of this code.
 
 Equivalently to what happens with all my other online contributions, this code can be considered public domain. For more information about my copyright/authorship attribution ideas, visit the corresponding pages of my sites:
