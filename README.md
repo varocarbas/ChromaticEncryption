@@ -18,7 +18,7 @@ I, Alvaro Carballo Garcia (= varocarbas), am the sole author of each single bit 
 
 Equivalently to what happens with all my other online contributions, this code can be considered public domain. For more information about my copyright/authorship attribution ideas, visit the corresponding pages of my sites:
 
-http://customsolvers.com/en/pages/company/legal/copyright/
-ES: http://customsolvers.com/es/paginas/empresa/legal/copyright/
-http://varocarbas.com/copyright/
-ES: http://varocarbas.com/copyright_es/
+https://customsolvers.com/en/pages/company/legal/copyright/
+ES: https://customsolvers.com/es/paginas/empresa/legal/copyright/
+https://varocarbas.com/copyright/
+ES: https://varocarbas.com/copyright_es/
